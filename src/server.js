@@ -8,6 +8,7 @@ const routes = require("./routes")
 
 migrationsRun()
 
+
 const app = express()
 app.use(express.json())
 
