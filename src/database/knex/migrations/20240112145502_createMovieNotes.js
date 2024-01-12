@@ -1,5 +1,5 @@
 exports.up = (knex) =>
-  knex.schema.createTable('movie_notes', (table) => {
+  knex.schema.createTable('movie_notes', table => {
     table.increments('id').primary();
     table.text('title').notNullable();
     table.text('description');
