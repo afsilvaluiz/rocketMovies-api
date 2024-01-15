@@ -14,7 +14,7 @@ class NotesController {
     })
 
     const tagsInsert = tags.map(name => {
-      return{
+      return {
         movie_notes_id,
         name,
         user_id
@@ -47,11 +47,23 @@ class NotesController {
   }
 
   async index(request, response) {
-    const { user_id } = request.query
+    const { title, user_id, movie_tags } = request.query
 
-    const movie_notes = await knex("movie_notes")
-    .where({ user_id })
-    .orderBy("title")
+    let movie_notes
+
+    if (movie_tags) {
+      const filterTags = movie_tags.split(',').map(tag => tag.trim())
+
+      movie_notes = await knex("movie_tags")
+        .whereIn("name", filterTags)
+
+    } else {
+      movie_notes = await knex("movie_notes")
+        .where({ user_id })
+        .whereLike("title", `%${title}%`)
+        .orderBy("title")
+    }
+
 
     return response.json(movie_notes)
 
