@@ -7,11 +7,10 @@ class NotesController {
     const { title, description, rating, tags } = request.body
     const { user_id } = request.params
 
-    const validRating = await rating <= 5 && rating >= 1
-
-    if(!validRating) {
-      throw new AppError("Rating must be between 1 and 5")
-    }
+    if (!rating || rating < 0 || rating > 5)
+      throw new AppError(!rating
+      ? "The rating field cannot be empty."
+      : "The rating must be a number between 0 and 5.");
 
     const [movie_notes_id] = await knex("movie_notes").insert({
       title,
@@ -38,6 +37,7 @@ class NotesController {
 
     const movie_notes = await knex("movie_notes").where({ id }).first()
     const movie_tags = await knex("movie_tags").where({ movie_notes_id: id }).orderBy("name")
+
 
     return response.json({
       ...movie_notes,
