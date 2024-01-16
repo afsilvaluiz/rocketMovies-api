@@ -1,10 +1,17 @@
 const { response } = require("express")
 const knex = require("../database/knex")
+const AppError = require("../utils/AppError")
 
 class NotesController {
   async create(request, response) {
     const { title, description, rating, tags } = request.body
     const { user_id } = request.params
+
+    const validRating = await rating <= 5 && rating >= 1
+
+    if(!validRating) {
+      throw new AppError("Rating must be between 1 and 5")
+    }
 
     const [movie_notes_id] = await knex("movie_notes").insert({
       title,
@@ -58,6 +65,8 @@ class NotesController {
         .select([
           "movie_notes.id",
           "movie_notes.title",
+          "movie_notes.description",
+          "movie_notes.rating",
           "movie_notes.user_id",
         ])
         .where("movie_notes.user_id", user_id)
