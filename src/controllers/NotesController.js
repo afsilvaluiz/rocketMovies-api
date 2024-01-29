@@ -5,7 +5,7 @@ const AppError = require("../utils/AppError")
 class NotesController {
   async create(request, response) {
     const { title, description, rating, tags } = request.body
-    const { user_id } = request.params
+    const user_id = request.user.id
 
     if (!rating || rating < 0 || rating > 5)
       throw new AppError(!rating
@@ -54,7 +54,9 @@ class NotesController {
   }
 
   async index(request, response) {
-    const { title, user_id, movie_tags } = request.query
+    const { title, movie_tags } = request.query
+
+    const user_id = request.user.id
 
     let movie_notes
 
