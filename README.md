@@ -3,8 +3,6 @@
     Rocketmovies API
 </h1>
 
-<br>
-
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/afsilvaluiz/rocketMovies-api">
 
@@ -118,7 +116,6 @@ The following tools were used in the construction of the project:
 
  <img alt="Github" title="Github" src="https://github.com/afsilvaluiz.png" width="100px" >
 
-<br>
 
 ## 📝 License
 
