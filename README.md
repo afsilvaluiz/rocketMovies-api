@@ -3,6 +3,8 @@
     Rocketmovies API
 </h1>
 
+<br>
+
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/afsilvaluiz/rocketMovies-api">
 
@@ -21,6 +23,8 @@
   </a>
 </p>
 
+<br>
+
 <img title="Structure" src=".github/structure.jpg"></img>
 
 <h4 align="center">
@@ -37,6 +41,8 @@
  <a href="#-license">License</a>
 </p>
 
+<br>
+
 ## 💻 About
 
 This repository works in conjunction with the corresponding frontend.
@@ -47,7 +53,7 @@ It also offers profile editing functions, such as changing avatars, names, email
 
 Please note that this project is part of Rocketseat's Explorer course.
 
-
+<br>
 
 ## 🔗 Deploy
 
@@ -55,7 +61,9 @@ To access the application's website deployment, click on the following link: [Li
 
 > Note: the application may take a while to start running after a while, due to the back-end running through the free plan on the hosting platform.
 
-🧰 👷  How it works
+<br>
+
+## 🧰 👷  How it works
 
 This project contains a Front-end (ReactJS) and Back-end (NodeJS) part, however, this repository is only the Front-end Web part,
 to access the Back-end repository go to the following <a href="https://github.com/afsilvaluiz/rocketMovies-api">Link</a>
@@ -83,12 +91,16 @@ $ npm test
 
 # The application will be opened on a port specified in the run terminal
 ```
-##  🔀 Routes
+<br>
+
+## 🔀 Routes
+<br>
 
 <img title="Insomnia" src=".github/insomnia.jpg" alt='Insomnia routes'></img>
 
 > Note: All parameters sent and received in the request and response body are in `JSON` format."
 
+<br>
 
 ## 🛠 Technologies
 
@@ -100,10 +112,13 @@ The following tools were used in the construction of the project:
 
 > For more details of the application's general dependencies, see the file [package.json](./package.json)
 
+<br>
+
 ## 🧑🏻‍💻 Author
 
  <img alt="Github" title="Github" src="https://github.com/afsilvaluiz.png" width="100px" >
 
+<br>
 
 ## 📝 License
 
