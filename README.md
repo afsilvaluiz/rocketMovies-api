@@ -54,4 +54,59 @@ To access the application's website deployment, click on the following link: [Li
 
 > Note: the application may take a while to start running after a while, due to the back-end running through the free plan on the hosting platform.
 
+## 👷  How it works
+
+This project contains a Front-end (ReactJS) and Back-end (NodeJS) part, however, this repository is only the Front-end Web part,
+to access the Back-end repository go to the following <a href="https://github.com/afsilvaluiz/rocketMovies-api">Link</a>
+
+#### ⏳ Running the web application (Frontend)
+
+```bash
+# Clone this repository
+$ git clone git@github.com:afsilvaluiz/rocketMovies-api.git
+
+# Go to the Front End application folder
+$ cd rocketMovies-api
+
+# Install the dependencies
+$ npm install
+
+# Run the migrations
+$ npm run migrate:dev
+
+# Run the application in development mode
+$ npm run dev
+
+# Run tests (if desired)
+$ npm test
+
+# The application will be opened on a port specified in the run terminal
+```
+###  🔀 Routes
+
+<img title="Insomnia" src=".github/insomnia.jpg" alt='Insomnia routes'></img>
+
+> Note: All parameters sent and received in the request and response body are in `JSON` format."
+
+
+## 🛠 Technologies
+
+The following tools were used in the construction of the project:
+
+### Server: `NodeJS`
+`Express` | `Express-async-error` | `SQLite` | `Cors` | `Dotenv` <br></br>
+`BcryptJS` | `JWT` | `Multer` | `PM2` | `Jest`
+
+> For more details of the application's general dependencies, see the file [package.json](./package.json)
+
+## 🧑🏻‍💻 Author
+
+ <img alt="Github" title="Github" src="https://github.com/afsilvaluiz.png" width="100px" >
+
+
+## 📝 License
+
+This project is under the MIT license. See the [LICENSE](./LICENSE) file for more information
+
+Made with 🎓 by Luiz Silva 🧑🏻‍💻
 
