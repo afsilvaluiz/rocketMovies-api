@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/api.svg" title="RocketMovies Api" alt="" width="45px" />
+    <img src=".github/api.svg" title="RocketMovies Api" alt="" width="45px" align="center" />
     Rocketmovies API
 </h1>
 
