@@ -63,7 +63,7 @@ To access the application's website deployment, click on the following link: [Li
 
 ## 🧰 How it works
 
-This project contains a Front-end (ReactJS) and Back-end (NodeJS) part, however, this repository is only the Backend part,
+This project contains a Frontend (ReactJS) and Backend (NodeJS) part, however, this repository is only the Backend part,
 to access the Frontend repository go to the following <a href="https://github.com/afsilvaluiz/rocketMovies">Link</a>
 
 #### ⏳ Running the web application (Backend)
