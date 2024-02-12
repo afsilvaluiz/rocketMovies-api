@@ -31,6 +31,7 @@
  <a href="#-about">About</a> |
  <a href="#-deploy">Deploy</a> |
  <a href="#-how-it-works">How It Works</a> |
+ <a href="#-routes">Routes</a> |
  <a href="#-technologies">Technologies</a> |
  <a href="#-author">Author</a> |
  <a href="#-license">License</a>
@@ -54,7 +55,7 @@ To access the application's website deployment, click on the following link: [Li
 
 > Note: the application may take a while to start running after a while, due to the back-end running through the free plan on the hosting platform.
 
-## 👷  How it works
+🧰 👷  How it works
 
 This project contains a Front-end (ReactJS) and Back-end (NodeJS) part, however, this repository is only the Front-end Web part,
 to access the Back-end repository go to the following <a href="https://github.com/afsilvaluiz/rocketMovies-api">Link</a>
