@@ -57,7 +57,7 @@ Please note that this project is part of Rocketseat's Explorer course.
 
 To access the application's website deployment, click on the following link: [Link](https://minerocketmovies.netlify.app/)
 
-> Note: the application may take a while to start running after a while, due to the back-end running through the free plan on the hosting platform.
+> Note: the application may take a while to start running after a while, due to the backend running through the free plan on the hosting platform.
 
 <br>
 
