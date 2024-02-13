@@ -72,7 +72,7 @@ to access the Frontend repository go to the following <a href="https://github.co
 # Clone this repository
 $ git clone git@github.com:afsilvaluiz/rocketMovies-api.git
 
-# Go to the Front End application folder
+# Go to the Backend application folder
 $ cd rocketMovies-api
 
 # Install the dependencies
